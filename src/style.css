@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  /* Portfolio Container */
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Intro Section */
+  .intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .intro-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .intro-section p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .skills-section h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill-card {
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    width: 150px;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .projects-section h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .project-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
