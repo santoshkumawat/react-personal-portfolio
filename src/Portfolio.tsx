@@ -33,11 +33,11 @@ const BriefcaseIcon = () => (
   </svg>
 );
 
-const MailIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M23 6V18C23 19.6523 21.6523 21 20 21H4C2.34772 21 1 19.6523 1 18V6C1 4.34315 2.34315 3 4 3H20C21.6569 3 23 4.34315 23 6ZM3.10658 5.55395C3.27196 5.22692 3.61204 5 4 5H20C20.388 5 20.728 5.22692 20.8934 5.55395L12 11.7793L3.10658 5.55395ZM3 7.92066L10.8531 13.4178C11.5417 13.8999 12.4583 13.8999 13.1469 13.4178L21 7.92066V18C21 18.5477 20.5477 19 20 19H4C3.45228 19 3 18.5477 3 18V7.92066Z" fill="#000000" />
-  </svg>
-);
+// const MailIcon = () => (
+//   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+//     <path fill-rule="evenodd" clip-rule="evenodd" d="M23 6V18C23 19.6523 21.6523 21 20 21H4C2.34772 21 1 19.6523 1 18V6C1 4.34315 2.34315 3 4 3H20C21.6569 3 23 4.34315 23 6ZM3.10658 5.55395C3.27196 5.22692 3.61204 5 4 5H20C20.388 5 20.728 5.22692 20.8934 5.55395L12 11.7793L3.10658 5.55395ZM3 7.92066L10.8531 13.4178C11.5417 13.8999 12.4583 13.8999 13.1469 13.4178L21 7.92066V18C21 18.5477 20.5477 19 20 19H4C3.45228 19 3 18.5477 3 18V7.92066Z" fill="#000000" />
+//   </svg>
+// );
 
 const GitHubIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -486,90 +486,90 @@ const ProjectsSection = () => {
 };
 
 // Contact Section Component
-const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+// const ContactSection = () => {
+//   const [formData, setFormData] = useState({
+//     name: '',
+//     email: '',
+//     message: ''
+//   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData(prevState => ({
+//       ...prevState,
+//       [name]: value
+//     }));
+//   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message!');
-  };
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     console.log('Form submitted:', formData);
+//     alert('Thank you for your message!');
+//   };
 
-  return (
-    <div className="max-w-md mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded-lg p-8 space-y-4"
-      >
-        <div>
-          <label htmlFor="name" className="block text-gray-700 mb-2">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-        <div>
-          <label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-        <div>
-          <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            rows={4}
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors"
-        >
-          Send Message
-        </button>
-      </form>
-    </div>
-  );
-};
+//   return (
+//     <div className="max-w-md mx-auto">
+//       <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
+//       <form
+//         onSubmit={handleSubmit}
+//         className="bg-white shadow-md rounded-lg p-8 space-y-4"
+//       >
+//         <div>
+//           <label htmlFor="name" className="block text-gray-700 mb-2">Name</label>
+//           <input
+//             type="text"
+//             id="name"
+//             name="name"
+//             value={formData.name}
+//             onChange={handleChange}
+//             required
+//             className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//           />
+//         </div>
+//         <div>
+//           <label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
+//           <input
+//             type="email"
+//             id="email"
+//             name="email"
+//             value={formData.email}
+//             onChange={handleChange}
+//             required
+//             className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//           />
+//         </div>
+//         <div>
+//           <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
+//           <textarea
+//             id="message"
+//             name="message"
+//             value={formData.message}
+//             onChange={handleChange}
+//             required
+//             rows={4}
+//             className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//           />
+//         </div>
+//         <button
+//           type="submit"
+//           className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors"
+//         >
+//           Send Message
+//         </button>
+//       </form>
+//     </div>
+//   );
+// };
 
-// Footer Component
-const Footer = () => {
-  return (
-    <footer className="bg-white py-4 mt-4 mb-32 text-center">
-      <p className="text-gray-600">
-        © 2024 Santosh Kumawat. All Rights Reserved.
-      </p>
-    </footer>
-  );
-};
+// // Footer Component
+// const Footer = () => {
+//   return (
+//     <footer className="bg-white py-4 mt-4 mb-32 text-center">
+//       <p className="text-gray-600">
+//         © 2024 Santosh Kumawat. All Rights Reserved.
+//       </p>
+//     </footer>
+//   );
+// };
 
 export default Portfolio;
