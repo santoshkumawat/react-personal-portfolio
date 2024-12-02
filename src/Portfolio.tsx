@@ -120,12 +120,10 @@ const HomeSection = () => {
   return (
     <div className="flex items-center justify-center text-center">
       <div>
-        <img src="/images/groot.jpg" alt="Groot"
+        <img src="/images/simpson.png" alt="Groot"
           className="mx-auto rounded-full w-48 h-48 mb-6 object-cover"
         />
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          Santosh Kumawat
-        </h1>
+        <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4">Santosh Kumawat</h1>
         <p className="text-xl text-gray-600 mb-6">
           Software Engineer | Full Stack Developer
         </p>
@@ -186,7 +184,7 @@ const AboutSection = () => {
           scalable software solutions.
         </p>
         <div>
-        <h3 className="text-2xl font-semibold text-gray-900 mb-4">Skills</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Skills</h3>
           <div className="flex flex-wrap gap-3 justify-center">
             {skills.map((skill) => (
               <span
@@ -207,33 +205,28 @@ const AboutSection = () => {
 const WorkSection = () => {
   const workExperience = [
     {
-      company: 'TechInnovate Solutions',
-      position: 'Senior Software Engineer',
-      duration: 'Jan 2021 - Present',
+      company: 'Eupheus Learning',
+      position: 'Java Developer',
+      duration: 'May 2022 - Present',
+      location: 'New Delhi, Delhi',
       responsibilities: [
-        'Led development of scalable web applications using React and Node.js',
-        'Implemented microservices architecture improving system performance',
-        'Mentored junior developers and conducted code reviews'
+        'Designing and developing RESTful APIs using Java and Spring Boot to enable seamless communication between frontend and backend systems.',
+        'Successfully migrated the email service from SES to SendGrid as part of the company\'s transition from AWS to GCP.',
+        'Developed features to enable uploading of student marks entries via Excel files for both the school and teacher apps.',
+        'Played a key role in the integration project for our group companies, ClassKlap and SchoolMitra, merging their separate school, student, and teacher applications into single unified entities.',
+        'Responsible for building finance, examination and grading modules that cover assessment, results and student report cards.',
+        'Developed backend features including Delete Student Rolllist and Regenerate Feedback to handle frequent queries from the finance, operations and product teams to resolve their issues.'
       ]
     },
     {
-      company: 'WebCraft Innovations',
-      position: 'Full Stack Developer',
-      duration: 'Jun 2018 - Dec 2020',
+      company: 'Mandasa Technologies',
+      position: 'Web Developer',
+      duration: 'June 2021 - May 2022',
+      location: 'Mandsaur, M. P.',
       responsibilities: [
-        'Developed responsive web applications using modern JavaScript frameworks',
-        'Integrated third-party APIs and optimized database queries',
-        'Collaborated with cross-functional teams to deliver high-quality software'
-      ]
-    },
-    {
-      company: 'StartUp Tech',
-      position: 'Junior Developer',
-      duration: 'Jan 2017 - May 2018',
-      responsibilities: [
-        'Assisted in development of client-side applications',
-        'Performed debugging and troubleshooting of existing systems',
-        'Learned and applied agile development methodologies'
+        'Writing and styling the front - end elements using HTML, CSS, and JavaScript.',
+        'Effectively maintaining the web page design.Additionally, documenting the same.',
+        'Created a Schema for our Client\'s interface to improve the overall experience and quality.'
       ]
     }
   ];
@@ -263,19 +256,20 @@ const WorkSection = () => {
         {/* Job Details */}
         <div className="bg-white shadow-lg rounded-lg p-8">
           <div className="mb-6">
-            <h3 className="text-2xl font-semibold text-gray-900">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">
               {workExperience[activeCompany].position}
             </h3>
             <p className="text-gray-600 mb-2">
               {workExperience[activeCompany].company}
             </p>
-            <div className="flex items-center text-gray-500">
+            <div className="flex flex-col md:flex-row justify-between text-gray-500">
               {/* <Calendar className="mr-2 w-5 h-5" /> */}
+              <span className='mb-2 md:mb-0'>{workExperience[activeCompany].location}</span>
               <span>{workExperience[activeCompany].duration}</span>
             </div>
           </div>
 
-          <ul className="space-y-4 text-gray-600 list-disc pl-5">
+          <ul className="space-y-4 text-left text-gray-600 list-disc pl-5">
             {workExperience[activeCompany].responsibilities.map((resp, index) => (
               <li key={index} className="leading-relaxed">
                 {resp}
@@ -292,25 +286,25 @@ const WorkSection = () => {
 const EducationSection = () => {
   const educationData = [
     {
-      degree: 'Master of Science in Computer Science',
-      institution: 'Tech University',
-      location: 'San Francisco, CA',
-      graduationYear: 2020,
+      degree: 'Master of Computer Application',
+      institution: 'Sage University',
+      location: 'Indore, M. P.',
+      graduationYear: '2020 - 2022',
       highlights: [
-        'Specialized in Machine Learning and Artificial Intelligence',
-        'GPA: 3.8/4.0',
-        'Research Assistant in Advanced Algorithms Lab'
+        'Graduated from Sage University Indore with a Master of Computer Applications (MCA) in Information Technology in June 2022',
+        'Achieving a CGPA of 7.88. Proficient in a range of skills including Bootstrap, CSS including Flexbox and Grid Layout, HTML, Core Java, JDBC, JSP, Servlets, MySQL, PostgreSQL, Git, GitHub, and front-end development.',
+        'Experienced in object-oriented programming, SQL, responsive web design, and developing web applications.'
       ]
     },
     {
-      degree: 'Bachelor of Engineering in Computer Engineering',
-      institution: 'Engineering College',
-      location: 'Seattle, WA',
-      graduationYear: 2018,
+      degree: 'Bachelor of Computer Application',
+      institution: 'Mandsaur Institute of Science and Technology',
+      location: 'Mandsaur, M. P.',
+      graduationYear: '2014 - 2017',
       highlights: [
-        'Minor in Data Science',
-        'Dean\'s List for Academic Excellence',
-        'Led university\'s tech innovation club'
+        'During my tenure at Mandsaur Institute of Science & Technology, I pursued a Bachelor of Computer Applications (BCA) with a focus on Information Technology. This comprehensive program equipped me with a solid foundation in various aspects of computer science and web development.',
+        'I graduated with a grade of 68.2%. Throughout my studies, I gained proficiency in HTML, CSS, JavaScript, Java, and SQL, enabling me to design and develop dynamic web applications.',
+        'My education provided me with a diverse skill set and a strong theoretical understanding, complemented by practical experience, which has been instrumental in my professional journey.'
       ]
     }
   ];
@@ -324,23 +318,23 @@ const EducationSection = () => {
             key={index}
             className="bg-white shadow-lg rounded-lg p-8 transform transition hover:scale-105"
           >
-            <div className="flex justify-between items-center mb-6">
-              <div>
+            <div className="flex flex-col md:flex-row justify-between items-center mb-6">
+              <div className="text-center md:text-left mb-4 md:mb-0">
                 <h3 className="text-2xl font-semibold text-gray-900">
                   {edu.degree}
                 </h3>
-                <div className="flex items-center text-gray-600 mt-2">
+                <div className="flex justify-center md:justify-start items-center text-gray-600 mt-2">
                   {/* <GraduationCap className="mr-2 w-5 h-5" /> */}
                   <span>{edu.institution}</span>
                 </div>
               </div>
-              <div className="text-right">
-                <div className="flex items-center text-gray-500">
+              <div className="text-center md:text-right">
+                <div className="flex justify-center md:justify-end items-center text-gray-500">
                   {/* <MapPin className="mr-2 w-5 h-5" /> */}
                   <span>{edu.location}</span>
                 </div>
                 <p className="text-blue-600 font-semibold">
-                  Graduated {edu.graduationYear}
+                  {edu.graduationYear}
                 </p>
               </div>
             </div>
@@ -363,21 +357,58 @@ const EducationSection = () => {
       <div className="mt-16">
         <h2 className="text-3xl font-bold text-center mb-8">Certifications</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            { name: 'AWS Certified Developer', issuer: 'Amazon Web Services' },
-            { name: 'React Developer Certification', issuer: 'React Academy' },
-            { name: 'Advanced JavaScript', issuer: 'Online Tech Institute' }
-          ].map((cert, index) => (
-            <div
-              key={index}
-              className="bg-gray-100 rounded-lg p-6 text-center hover:bg-blue-50 transition"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                {cert.name}
-              </h3>
-              <p className="text-gray-600">{cert.issuer}</p>
-            </div>
-          ))}
+          {
+            [
+              {
+                name: 'Front-End Web UI Frameworks and Tools: Bootstrap 4',
+                issuer: 'Coursera',
+                completionOn: 'May 2021',
+                certificationLink: 'https://www.coursera.org/account/accomplishments/certificate/Y5XEDZYS3ZQL'
+              },
+              {
+                name: 'Responsive Web Design',
+                issuer: 'freeCodeCamp',
+                completionOn: 'Jan 2021',
+                certificationLink: 'https://www.freecodecamp.org/certification/santoshkumaawat/responsive-web-design'
+              },
+              {
+                name: 'The Complete Web Developer Course 2.0',
+                issuer: 'Udemy',
+                completionOn: 'July 2020',
+                certificationLink: 'https://www.udemy.com/certificate/UC-1bcf02da-5bfa-4bce-a2cd-9b0088317581'
+              },
+              {
+                name: 'Advance Java',
+                issuer: 'SSI Digital, Indore',
+                completionOn: 'May 2020',
+                certificationLink: 'https://drive.google.com/file/d/1FdvIK5MQByIDauF8yKMtukZwRk5ULMH6/view'
+              },
+              {
+                name: 'Core Java',
+                issuer: 'SSI Digital, Indore',
+                completionOn: 'Feb 2020',
+                certificationLink: 'https://drive.google.com/file/d/1GdSo9J0f5cM9bXsrOrJodoGCO1lJ2L60/view'
+              }
+            ].map((cert, index) => (
+              <div
+                key={index}
+                className="bg-gray-100 rounded-lg p-6 text-center hover:bg-blue-50 transition"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  {cert.name}
+                </h3>
+                <p className="text-gray-600 mb-2">{cert.issuer}</p>
+                <p className="text-gray-600 mb-2">Issued - {cert.completionOn}</p>
+                <p className="text-gray-600">
+                  <a
+                    href={cert.certificationLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-700 hover:text-blue-900 w-8 h-8"
+                  >View Certificate</a></p>
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
@@ -388,22 +419,18 @@ const EducationSection = () => {
 const ProjectsSection = () => {
   const projects = [
     {
-      name: 'Task Management App',
-      description: 'Full-stack task tracking application with real-time updates.',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      githubLink: '#'
+      name: 'E-Commerce Web Application',
+      description: 'A comprehensive e-commerce platform with features like user registration, product and category management, cart functionality, and seamless user interaction.',
+      technologies: ['Java', 'Spring Boot', 'Hibernate', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/santoshkumawat/advance-java-e-commerce-web-app',
+      liveLink: 'https://github.com/santoshkumawat/advance-java-e-commerce-web-app'
     },
     {
-      name: 'E-commerce Platform',
-      description: 'Scalable online marketplace with payment integration.',
-      technologies: ['React', 'GraphQL', 'Stripe'],
-      githubLink: '#'
-    },
-    {
-      name: 'AI Chatbot',
-      description: 'Machine learning powered conversational interface.',
-      technologies: ['Python', 'TensorFlow', 'Flask'],
-      githubLink: '#'
+      name: 'Tic-Tac-Toe',
+      description: 'An interactive Tic Tac Toe game built with React, offering a sleek and responsive design. The project showcases frontend development skills, including state management and dynamic user interaction.',
+      technologies: ['React', 'HTML', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/santoshkumawat/react-tictactoe-app',
+      liveLink: 'https://tictactoe-kidsgame.netlify.app'
     }
   ];
 
@@ -428,17 +455,29 @@ const ProjectsSection = () => {
                 </span>
               ))}
             </div>
-            <a
-              href="https://github.com/your-repo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex justify-center text-blue-600 hover:text-blue-800"
-            >
-              <span className="w-5 h-5 mr-2">
-                <GitHubIcon />
-              </span>
-              View on GitHub
-            </a>
+            <div className='mb-2'>
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center text-blue-600 hover:text-blue-800"
+              >
+                <span className="w-5 h-5 mr-2">
+                  <GitHubIcon />
+                </span>
+                View on GitHub
+              </a>
+            </div>
+            <div>
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center text-blue-600 hover:text-blue-800"
+              >
+                Click Here!
+              </a>
+            </div>
           </div>
         ))}
       </div>
