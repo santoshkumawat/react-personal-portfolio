@@ -164,11 +164,12 @@ const HomeSection = () => {
         <div className="flex justify-center space-x-4">
           <a
             href="/Santosh_Kumawat_Resume.pdf"
+            className="button-64"
+            role="button"
             target="_blank"
             rel="noopener noreferrer"
-            className=""
           >
-            <button className="button-64" role="button"><span className="text">View Resume</span></button>
+            <span className="text">View Resume</span>
           </a>
         </div>
       </div>
