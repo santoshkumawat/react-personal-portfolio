@@ -127,7 +127,7 @@ const HomeSection = () => {
         <p className="text-xl text-gray-600 mb-6">
           Software Engineer | Full Stack Developer
         </p>
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center space-x-4 mb-4">
           <a
             href="https://github.com/santoshkumawat"
             target="_blank"
@@ -159,6 +159,16 @@ const HomeSection = () => {
             className="text-gray-700 hover:text-gray-900 w-8 h-8"
           >
             <TwitterIcon />
+          </a>
+        </div>
+        <div className="flex justify-center space-x-4">
+          <a
+            href="/Santosh_Kumawat_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            <button className="button-64" role="button"><span className="text">View Resume</span></button>
           </a>
         </div>
       </div>
