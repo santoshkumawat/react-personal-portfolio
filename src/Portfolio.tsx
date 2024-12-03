@@ -2,119 +2,42 @@ import React, { useState, useEffect } from "react";
 
 // Icon Components
 const HomeIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M12.6139 1.21065C12.2528 0.929784 11.7472 0.929784 11.3861 1.21065L2.38606 8.21065C2.14247 8.4001 2 8.69141 2 9V20C2 21.1046 2.89543 22 4 22H20C21.1046 22 22 21.1046 22 20V9C22 8.69141 21.8575 8.4001 21.6139 8.21065L12.6139 1.21065ZM16 20H20V9.48908L12 3.26686L4 9.48908V20H8V12C8 11.4477 8.44772 11 9 11H15C15.5523 11 16 11.4477 16 12V20ZM10 20V13H14V20H10Z"
-      fill="#000000"
-    />
+  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="black">
+    <path d="M220-180h150v-220q0-12.75 8.63-21.38Q387.25-430 400-430h160q12.75 0 21.38 8.62Q590-412.75 590-400v220h150v-390L480-765 220-570v390Zm-60 0v-390q0-14.25 6.38-27 6.37-12.75 17.62-21l260-195q15.68-12 35.84-12Q500-825 516-813l260 195q11.25 8.25 17.63 21 6.37 12.75 6.37 27v390q0 24.75-17.62 42.37Q764.75-120 740-120H560q-12.75 0-21.37-8.63Q530-137.25 530-150v-220H430v220q0 12.75-8.62 21.37Q412.75-120 400-120H220q-24.75 0-42.37-17.63Q160-155.25 160-180Zm320-293Z" />
   </svg>
 );
 
 const UserIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M12 1C8.96243 1 6.5 3.46243 6.5 6.5C6.5 9.53757 8.96243 12 12 12C15.0376 12 17.5 9.53757 17.5 6.5C17.5 3.46243 15.0376 1 12 1ZM8.5 6.5C8.5 4.567 10.067 3 12 3C13.933 3 15.5 4.567 15.5 6.5C15.5 8.433 13.933 10 12 10C10.067 10 8.5 8.433 8.5 6.5Z"
-      fill="#000000"
-    />
-    <path
-      d="M8 14C4.68629 14 2 16.6863 2 20V22C2 22.5523 2.44772 23 3 23C3.55228 23 4 22.5523 4 22V20C4 17.7909 5.79086 16 8 16H16C18.2091 16 20 17.7909 20 20V22C20 22.5523 20.4477 23 21 23C21.5523 23 22 22.5523 22 22V20C22 16.6863 19.3137 14 16 14H8Z"
-      fill="#000000"
-    />
+  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="black">
+    <path d="M480-481q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160-220v-34q0-38 19-65t49-41q67-30 128.5-45T480-420q62 0 123 15.5t127.92 44.69q31.3 14.13 50.19 40.97Q800-292 800-254v34q0 24.75-17.62 42.37Q764.75-160 740-160H220q-24.75 0-42.37-17.63Q160-195.25 160-220Zm60 0h520v-34q0-16-9.5-30.5T707-306q-64-31-117-42.5T480-360q-57 0-111 11.5T252-306q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570-631q0-39-25.5-64.5T480-721q-39 0-64.5 25.5T390-631q0 39 25.5 64.5T480-541Zm0-90Zm0 411Z" />
   </svg>
 );
 
 const WorkIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 22"
-    fill="none"
-  >
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M4 12H3V8C3 6.89543 3.89543 6 5 6H9M4 12V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V12M4 12H10M20 12H21V8C21 6.89543 20.1046 6 19 6H15M20 12H14M14 12V10H10V12M14 12V14H10V12M9 6V5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V6M9 6H15"
-      stroke="#000000"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
+  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="black">
+    <path d="M140-120q-24 0-42-18t-18-42v-480q0-24 18-42t42-18h180v-100q0-24 18-42t42-18h200q24 0 42 18t18 42v100h180q24 0 42 18t18 42v480q0 24-18 42t-42 18H140Zm0-60h680v-480H140v480Zm240-540h200v-100H380v100ZM140-180v-480 480Z" />
   </svg>
 );
 
 const EducationIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M16.6472 4.2755C18.3543 3.89891 19.8891 3.97968 20.8292 4.10203C20.8592 4.10592 20.8911 4.11927 20.9256 4.16303C20.9637 4.21127 21 4.29459 21 4.40561V17.5662C21 17.8531 20.7538 18.0756 20.4978 18.0671C19.2792 18.027 17.4886 18.0635 15.7992 18.4717C14.6384 18.7522 13.7101 19.2206 13 19.7021V6.46564C13 6.22541 13.0548 6.10361 13.0945 6.05233C13.2183 5.89268 13.5973 5.55172 14.2498 5.18356C14.8798 4.82813 15.7 4.48446 16.6472 4.2755ZM21.0873 2.11876C19.9976 1.97693 18.2169 1.88113 16.2164 2.32246C15.0613 2.57728 14.0561 2.99648 13.2671 3.44169C12.5005 3.87417 11.8669 4.37162 11.514 4.82683C11.1078 5.35069 11 5.96564 11 6.46564V22C11 22.4411 11.289 22.83 11.7112 22.9574C12.1314 23.0841 12.5849 22.922 12.8297 22.5583L12.8315 22.5555L12.8304 22.5572L12.8297 22.5583C12.8297 22.5583 12.831 22.5564 12.8322 22.5546C12.8365 22.5485 12.8455 22.536 12.8591 22.5178C12.8864 22.4814 12.9324 22.4224 12.9974 22.3467C13.1277 22.195 13.3329 21.9779 13.6163 21.7398C14.1824 21.2641 15.0549 20.7091 16.269 20.4158C17.7048 20.0688 19.2899 20.0284 20.4319 20.066C21.8117 20.1115 23 18.9895 23 17.5662V4.40561C23 3.34931 22.2946 2.27587 21.0873 2.11876Z"
-      fill="#000000"
-    />
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M7.35275 4.2755C5.64572 3.89891 4.11089 3.97968 3.17076 4.10203C3.14084 4.10592 3.10885 4.11927 3.07437 4.16303C3.03635 4.21127 3 4.29459 3 4.40561V17.5662C3 17.8531 3.24619 18.0756 3.50221 18.0671C4.72076 18.027 6.51143 18.0635 8.20077 18.4717C9.36161 18.7522 10.2899 19.2206 11 19.7021V6.46564C11 6.22541 10.9452 6.10361 10.9055 6.05233C10.7817 5.89268 10.4027 5.55172 9.75015 5.18356C9.12019 4.82813 8.29995 4.48446 7.35275 4.2755ZM2.91265 2.11876C4.00241 1.97693 5.78311 1.88113 7.78361 2.32246C8.9387 2.57728 9.94388 2.99648 10.7329 3.44169C11.4995 3.87417 12.1331 4.37162 12.486 4.82683C12.8922 5.35069 13 5.96564 13 6.46564V22C13 22.4411 12.711 22.83 12.2888 22.9574C11.8686 23.0841 11.4151 22.922 11.1703 22.5583L11.1685 22.5555L11.1696 22.5572L11.1703 22.5583C11.1703 22.5583 11.169 22.5564 11.1678 22.5546C11.1635 22.5485 11.1545 22.536 11.1409 22.5178C11.1136 22.4814 11.0676 22.4224 11.0026 22.3467C10.8723 22.195 10.6671 21.9779 10.3837 21.7398C9.81759 21.2641 8.94511 20.7091 7.73105 20.4158C6.2952 20.0688 4.71011 20.0284 3.56807 20.066C2.18834 20.1115 1 18.9895 1 17.5662V4.40561C1 3.34931 1.70543 2.27587 2.91265 2.11876Z"
-      fill="#000000"
-    />
+  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="black">
+    <path d="M479-120 189-279v-240L40-600l439-240 441 240v317h-60v-282l-91 46v240L479-120Zm0-308 315-172-315-169-313 169 313 172Zm0 240 230-127v-168L479-360 249-485v170l230 127Zm1-240Zm-1 74Zm0 0Z" />
   </svg>
 );
 
 const BriefcaseIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M4 4C3.73478 4 3.48043 4.10536 3.29289 4.29289C3.10536 4.48043 3 4.73478 3 5V19C3 19.2652 3.10536 19.5196 3.29289 19.7071C3.48043 19.8946 3.73478 20 4 20H20C20.2652 20 20.5196 19.8946 20.7071 19.7071C20.8946 19.5196 21 19.2652 21 19V8C21 7.73478 20.8946 7.48043 20.7071 7.29289C20.5196 7.10536 20.2652 7 20 7H11.5352C10.8665 7 10.242 6.6658 9.87108 6.1094L8.46482 4H4ZM1.87868 2.87868C2.44129 2.31607 3.20435 2 4 2H8.46482C9.13352 2 9.75799 2.3342 10.1289 2.8906L11.5352 5H20C20.7957 5 21.5587 5.31607 22.1213 5.87868C22.6839 6.44129 23 7.20435 23 8V19C23 19.7957 22.6839 20.5587 22.1213 21.1213C21.5587 21.6839 20.7957 22 20 22H4C3.20435 22 2.44129 21.6839 1.87868 21.1213C1.31607 20.5587 1 19.7957 1 19V5C1 4.20435 1.31607 3.44129 1.87868 2.87868Z"
-      fill="#000000"
-    />
+  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="black">
+    <path d="M140-160q-24 0-42-18.5T80-220v-520q0-23 18-41.5t42-18.5h256q12.44 0 23.72 5t19.37 13.09L481-740h339q23 0 41.5 18.5T880-680v460q0 23-18.5 41.5T820-160H140Zm0-60h680v-460H456l-60-60H140v520Zm0 0v-520 520Z" />
   </svg>
 );
 
+
+
 const LinkIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-  >
-    <path
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"
-    />
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
   </svg>
+
 );
 
 // const MailIcon = () => (
@@ -264,8 +187,8 @@ const TypingEffect = () => {
   return (
     <div className="font-mono relative inline-block mb-12">
       <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-700">
-        {text} 
-      <span className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-700 cursor absolute animate-blink">|</span>
+        {text}
+        <span className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-700 cursor absolute animate-blink">|</span>
       </p>
     </div>
   );
@@ -365,7 +288,7 @@ const AboutSection = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-8">About Me</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">About Me</h2>
       <div className="bg-white shadow-md rounded-lg p-8 space-y-6">
         <p className="text-gray-600 leading-relaxed">
           Software Engineer with 3 years of experience in Java, Spring Boot, and
@@ -374,7 +297,7 @@ const AboutSection = () => {
           excellence and delivering scalable software solutions.
         </p>
         <div>
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Skills</h3>
+          <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4">Skills</h3>
           <div className="flex flex-wrap gap-3 justify-center">
             {skills.map((skill) => (
               <span
@@ -425,7 +348,7 @@ const WorkSection = () => {
 
   return (
     <div className="mx-auto max-w-4xl">
-      <h2 className="text-3xl font-bold text-center mb-8">Work Experience</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Where I’ve Worked</h2>
       <div className="grid md:grid-cols-1 gap-8">
         {/* Company Selector */}
         <div className="space-y-4">
@@ -446,7 +369,7 @@ const WorkSection = () => {
         {/* Job Details */}
         <div className="bg-white shadow-lg rounded-lg p-8">
           <div className="mb-6">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">
               {workExperience[activeCompany].position}
             </h3>
             <p className="text-gray-600 mb-2">
@@ -505,7 +428,7 @@ const EducationSection = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-8">Education</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Where I’ve Studied</h2>
       <div className="space-y-8">
         {educationData.map((edu, index) => (
           <div
@@ -514,7 +437,7 @@ const EducationSection = () => {
           >
             <div className="flex flex-col md:flex-row justify-between items-center mb-6">
               <div className="text-center md:text-left mb-4 md:mb-0">
-                <h3 className="text-2xl font-semibold text-gray-900">
+                <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
                   {edu.degree}
                 </h3>
                 <div className="flex justify-center md:justify-start items-center text-gray-600 mt-2">
@@ -534,7 +457,7 @@ const EducationSection = () => {
             </div>
 
             <div className="border-t pt-4">
-              <h4 className="text-lg font-semibold mb-3 text-gray-900">
+              <h4 className="text md:text-lg font-semibold mb-3 text-gray-900">
                 Key Highlights
               </h4>
               <ul className="space-y-2 text-left text-gray-600 list-disc pl-5">
@@ -549,7 +472,7 @@ const EducationSection = () => {
 
       {/* Certifications Section */}
       <div className="mt-16">
-        <h2 className="text-3xl font-bold text-center mb-8">Certifications</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Certifications</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             {
@@ -622,17 +545,8 @@ const ProjectsSection = () => {
       name: "E-Commerce Web Application",
       description:
         "A comprehensive e-commerce platform with features like user registration, product and category management, cart functionality, and seamless user interaction.",
-      technologies: [
-        "Java",
-        "Spring Boot",
-        "Hibernate",
-        "MySQL",
-        "HTML",
-        "CSS",
-        "JavaScript",
-      ],
-      githubLink:
-        "https://github.com/santoshkumawat/advance-java-e-commerce-web-app",
+      technologies: ["Java", "Spring Boot", "Hibernate", "MySQL", "HTML", "CSS", "JavaScript",],
+      githubLink: "https://github.com/santoshkumawat/advance-java-e-commerce-web-app",
       liveLink: "",
     },
     {
@@ -647,53 +561,44 @@ const ProjectsSection = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Some Things I’ve Built</h2>
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project) => (
           <div
             key={project.name}
             className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow"
           >
-            <div className="flex justify-center gap-2 items-center mb-3">
-              <h3 className="text-2xl font-semibold text-gray-900">
-                {project.name}
-              </h3>
-              <span>
-                {project.liveLink ? (
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex justify-center hover:text-blue-800"
-                  >
-                    <LinkIcon />
+            <div className="flex justify-between gap-2 items-center mb-4">
+              <div>
+                <span>
+                  <BriefcaseIcon />
+                </span>
+              </div>
+              <div className="flex items-center">
+                <span className="custom-icon-1">
+                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex justify-center hover:text-blue-800">
+                    <GitHubIcon />
                   </a>
+                </span>
+                {project.liveLink ? (
+                  <span className="custom-icon-2 pl-4">
+                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="flex justify-center hover:text-blue-800">
+                      <LinkIcon />
+                    </a>
+                  </span>
                 ) : null}
-              </span>
+              </div>
             </div>
-            <p className="text-gray-600 mb-4">{project.description}</p>
-            <div className="flex justify-center flex-wrap gap-2 mb-4">
-              {project.technologies.map((tech) => (
-                <span
-                  key={tech}
-                  className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-            <div className="mb-2">
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex justify-center text-blue-600 hover:text-blue-800"
-              >
-                <span className="w-5 h-5 mr-2">
-                  <GitHubIcon />
-                </span>
-                View on GitHub
-              </a>
+            <div className="text-left">
+              <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">{project.name}</h3>
+              <p className="text-gray-600 mb-8">{project.description}</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.map((tech) => (
+                  <span key={tech} className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs">
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         ))}
