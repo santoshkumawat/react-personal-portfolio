@@ -575,13 +575,13 @@ const ProjectsSection = () => {
                 </span>
               </div>
               <div className="flex items-center">
-                <span className="custom-icon-1">
+                <span className="">
                   <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex justify-center hover:text-blue-800">
                     <GitHubIcon />
                   </a>
                 </span>
                 {project.liveLink ? (
-                  <span className="custom-icon-2 pl-4">
+                  <span className="pl-4">
                     <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="flex justify-center hover:text-blue-800">
                       <LinkIcon />
                     </a>
