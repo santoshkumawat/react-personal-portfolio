@@ -244,7 +244,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
 
 const TypingEffect = () => {
   const [text, setText] = useState(''); // Ensure state is initialized with an empty string
-  const fullText = "I  craft Java-powered projects for the web."; // The full text to type
+  const fullText = "I  craft Java powered projects for the web."; // The full text to type
   const typingSpeed = 100; // Speed of typing effect (in ms)
 
   useEffect(() => {
@@ -262,7 +262,7 @@ const TypingEffect = () => {
   }, []);  // Empty dependency array ensures this effect runs only once
 
   return (
-    <div className="font-mono relative inline-block mb-8">
+    <div className="font-mono relative inline-block mb-12">
       <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-700">
         {text} 
       <span className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-700 cursor absolute animate-blink">|</span>
@@ -279,8 +279,9 @@ const HomeSection = () => {
         <img
           src="/images/simpson.png"
           alt="Groot"
-          className="mx-auto rounded-full w-48 h-48 mb-6 object-cover"
+          className="mx-auto w-48 h-48 mb-6 object-cover"
         />
+        <p className="text-xl font-mono text-gray-600 mb-4">Hi, my name is</p>
         <h1 className="text-5xl md:text-6xl lg:text-8xl font-bold text-gray-800 mb-4 dynalight-regular">Santosh Kumawat</h1>
         <p className="text-xl text-gray-600 mb-6">
           Software Engineer | Full Stack Developer
