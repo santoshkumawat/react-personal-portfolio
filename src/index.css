@@ -64,3 +64,21 @@ code {
     min-width: 196px;
   }
 }
+
+/* Add this to your Tailwind CSS file for blinking cursor animation */
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  animation: blink 0.7s steps(2, start) infinite;
+}
