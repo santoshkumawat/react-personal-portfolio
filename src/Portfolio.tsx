@@ -123,7 +123,7 @@ const HomeSection = () => {
         <img src="/images/simpson.png" alt="Groot"
           className="mx-auto rounded-full w-48 h-48 mb-6 object-cover"
         />
-        <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4">Santosh Kumawat</h1>
+        <h1 className="text-5xl md:text-6xl lg:text-8xl font-bold text-gray-800 mb-4 dynalight-regular">Santosh Kumawat</h1>
         <p className="text-xl text-gray-600 mb-6">
           Software Engineer | Full Stack Developer
         </p>
